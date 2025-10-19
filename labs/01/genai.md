@@ -1,69 +1,39 @@
 # GenAI-Dokumentation – Lab 01: Open Source Software and Hosting
 
-## 1. Ziel der Aufgabe
-In dieser Aufgabe sollte ein eigenes **Markdown-Cheat-Sheet** erstellt werden, um die grundlegende Syntax und Strukturierungsmöglichkeiten von Markdown kennenzulernen.  
-Das Ziel war, die verschiedenen Formatierungsarten (Überschriften, Absätze, Listen, Tabellen, Links usw.) selbstständig zu dokumentieren und anhand von Codebeispielen zu demonstrieren.
+## 1) Eigene Umsetzung und erste Schritte
+Ich habe das Markdown-Cheat-Sheet zunächst selbst aufgebaut, die Struktur überlegt und einige Formatierungen ausprobiert.  
+Beim Schreiben hatte ich anfangs kleinere Probleme mit Codeblöcken und der Hierarchie der Überschriften, da Markdown diese bei fehlerhaften Backticks falsch interpretiert.
 
 ---
 
-## 2. Eigenständige Arbeit
-Ich habe die Aufgabe selbstständig bearbeitet, die Markdown-Syntax getestet und die Datei `cheatsheet.md` manuell erstellt.  
-Zur Unterstützung habe ich ChatGPT (GPT-5, Stand: Oktober 2025) verwendet, um:
-- die Formatierung konsequent und fehlerfrei umzusetzen,  
-- eine einheitliche Struktur (Überschriften, Beispielcode, Ergebnis) zu entwickeln,  
-- und sicherzustellen, dass alle Punkte aus der Aufgabenstellung vollständig enthalten sind.
+## 2) Nutzung eines LLM (ChatGPT)
+Ich habe ChatGPT (GPT-5, Stand Oktober 2025) punktuell genutzt, um mir bei der Formatierung und beim Aufbau des Cheat-Sheets helfen zu lassen.  
+Dabei ging es hauptsächlich darum, die Struktur übersichtlich zu gestalten und sicherzustellen, dass alle Themen aus der Aufgabenstellung abgedeckt sind.  
+Die eigentlichen Inhalte und Erklärtexte habe ich größtenteils selbst formuliert oder angepasst.
 
 ---
 
-## 3. Nutzung von ChatGPT
-**Verwendetes Modell:** GPT-5 (OpenAI)  
-**Verwendungszweck:** Unterstützung bei der Erstellung, Strukturierung und Überprüfung des Markdown-Cheat-Sheets  
-
-### Beispielhafte Prompts
-> „Korrigiere die Formatierung so, dass wirklich jede Überschrift mit `#` als Markdown-Überschrift angezeigt wird.“  
->  
-> „Überprüfe, ob das Cheat-Sheet alle Punkte der Aufgabenstellung erfüllt.“
-
-### Beispielhafte Ergebnisse
-Das Modell hat strukturierte Markdown-Beispiele geliefert, bestehend aus:
-- Überschriften mit passender Hierarchie  
-- Codeblöcken mit Beispielen  
-- „Gerenderten Ergebnissen“ zum Vergleich  
-- Trennlinien, Listen und erklärendem Text  
-
-Diese Vorschläge habe ich anschließend geprüft, leicht angepasst und in die finale Datei `cheatsheet.md` übernommen.
+## 3) Beispielhafte Unterstützung
+Ich habe z. B. nach Hinweisen gefragt, wie man Markdown-Codeblöcke korrekt schließt oder wie man Absätze und Zeilenumbrüche sauber darstellen kann.  
+ChatGPT hat mir ein Beispiel gezeigt, das ich dann selbst überarbeitet und in mein eigenes Layout integriert habe.
 
 ---
 
-## 4. Reflexion
-Die Zusammenarbeit mit ChatGPT hat mir geholfen, die Markdown-Syntax besser zu verstehen und effizient eine klare, konsistente Struktur zu erstellen.  
-Ich habe jeden Abschnitt nachvollzogen, getestet und im Markdown-Editor überprüft.  
-Durch die KI-Unterstützung konnte ich Redundanzen vermeiden und schneller eine technisch saubere Dokumentation aufbauen.
-
-**Lerneffekt:**  
-- Ich verstehe jetzt genau, wie Markdown gerendert wird.  
-- Ich kann zukünftig ähnliche Dokumentationen ohne Unterstützung erstellen.  
-- Ich weiß, wie ich ChatGPT gezielt als Werkzeug in technischen Projekten einsetzen kann.
+## 4) Überprüfung und Anpassung
+Ich habe alle generierten Vorschläge überprüft, überflüssige Stellen entfernt und die Texte in meine eigene Sprache übertragen.  
+Außerdem habe ich kontrolliert, dass wirklich jeder Punkt aus der Aufgabenstellung (Basic Formatting, Listen, Links, Code, Tabellen usw.) vorkommt.  
+Das finale Cheat-Sheet ist komplett funktionsfähig und lässt sich fehlerfrei rendern.
 
 ---
 
-## 5. Bewertung der Unterstützung
-| Anteil | Beschreibung |
-|--------|---------------|
-| **Eigene Arbeit (ca. 40 %)** | Strukturierung, Tests, manuelle Überprüfung, eigenständige Anpassungen |
-| **ChatGPT-Unterstützung (ca. 60 %)** | Vorschläge zur Formatierung, Codebeispiele, Strukturaufbau |
+## 5) Fazit
+Die Arbeit mit ChatGPT hat mir geholfen, Formatierungsfehler zu vermeiden und schneller eine saubere Struktur zu finden.  
+Den Großteil der inhaltlichen Arbeit – Erklärungen, Überschriften, Beispiele und Tests – habe ich selbst gemacht.  
+Ich sehe ChatGPT in diesem Fall als unterstützendes Werkzeug, ähnlich wie eine erweiterte Dokumentation.
 
 ---
 
-## 6. Fazit
-Die Aufgabe wurde erfolgreich abgeschlossen.  
-Das Cheat-Sheet deckt alle in der Aufgabenstellung geforderten Punkte ab.  
-Die Nutzung von ChatGPT war methodisch unterstützend, transparent dokumentiert und diente ausschließlich der Verbesserung der Struktur und Lesbarkeit.
-
----
-
-**Dateien:**
+**Dateien im Ordner `labs/01/`:**
 - `cheatsheet.md` – vollständige Lösung der Aufgabe  
-- `genai.md` – diese Dokumentation über die Verwendung von ChatGPT  
+- `genai.md` – Dokumentation der ChatGPT-Unterstützung
 
-**Abgabeordner:** `labs/01/`
