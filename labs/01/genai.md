@@ -50,8 +50,8 @@ Durch die KI-Unterstützung konnte ich Redundanzen vermeiden und schneller eine 
 ## 5. Bewertung der Unterstützung
 | Anteil | Beschreibung |
 |--------|---------------|
-| **Eigene Arbeit (ca. 60 %)** | Strukturierung, Tests, manuelle Überprüfung, eigenständige Anpassungen |
-| **ChatGPT-Unterstützung (ca. 40 %)** | Vorschläge zur Formatierung, Codebeispiele, Strukturaufbau |
+| **Eigene Arbeit (ca. 40 %)** | Strukturierung, Tests, manuelle Überprüfung, eigenständige Anpassungen |
+| **ChatGPT-Unterstützung (ca. 60 %)** | Vorschläge zur Formatierung, Codebeispiele, Strukturaufbau |
 
 ---
 
