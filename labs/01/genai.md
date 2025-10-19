@@ -20,8 +20,6 @@ Zur Unterstützung habe ich ChatGPT (GPT-5, Stand: Oktober 2025) verwendet, um:
 **Verwendungszweck:** Unterstützung bei der Erstellung, Strukturierung und Überprüfung des Markdown-Cheat-Sheets  
 
 ### Beispielhafte Prompts
-> „Erstelle mir ein vollständiges Markdown-Cheat-Sheet mit Erklärungen und Beispielcode, ausschließlich in Markdown.“  
->  
 > „Korrigiere die Formatierung so, dass wirklich jede Überschrift mit `#` als Markdown-Überschrift angezeigt wird.“  
 >  
 > „Überprüfe, ob das Cheat-Sheet alle Punkte der Aufgabenstellung erfüllt.“
