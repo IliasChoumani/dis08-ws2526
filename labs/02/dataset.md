@@ -1,107 +1,82 @@
 # Open Data Lab – Datensatzdokumentation
 
-## 1. Datensatzbeschreibung
+## 1. Beschreibung der Datensätze
 
-### Titel & Quelle
-**Hauptdatensatz:** FIFA World Cup Statistics (1930–2014)  
-**Quelle:** [Kaggle – FIFA World Cup 1930–2014 Dataset](https://www.kaggle.com/datasets/abecklas/fifa-world-cup)  
+### Hauptdatensatz: FIFA World Cup Statistics
+- **Titel:** FIFA World Cup 1930–2014  
+- **Quelle:** [Kaggle – FIFA World Cup Dataset](https://www.kaggle.com/datasets/abecklas/fifa-world-cup)  
+- **Format:** CSV-Datei  
+- **Größe:** 20 Zeilen, 10 Spalten  
+- **Wichtige Spalten:** Jahr, Gastgeberland, Gewinner, Zweiter, Dritter, Tore gesamt, Anzahl Teams, gespielte Spiele  
+- **Lizenz:** *Kaggle Dataset License* (frei für nicht-kommerzielle Nutzung, Quelle muss angegeben werden)  
 
-**Zusatzdatensatz:** World Population by Country  
-**Quelle:** [Kaggle – World Population Dataset (1960–2023)](https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset)  
-
----
-
-### Dateiformate
-Beide Datensätze liegen im **CSV-Format** vor und sind **UTF-8-kodiert**.  
-Sie können problemlos mit Programmen wie Excel, Python (pandas) oder R geöffnet werden.
+In der Datei stehen alle Weltmeisterschaften von 1930 bis 2014 mit den jeweiligen Ländern und Ergebnissen.  
+Man sieht also pro Jahr, welches Land gewonnen hat, wo das Turnier stattfand und wie viele Tore insgesamt gefallen sind.  
 
 ---
 
-### Größe & Struktur
-| Datensatz | Zeilen | Spalten | Dateigröße |
-|------------|---------|----------|-------------|
-| WorldCups.csv | 20 | 10 | ca. 4 KB |
-| world_population.csv | 234 | 17 | ca. 45 KB |
+### Zusatzdatensatz: World Population Dataset
+- **Titel:** World Population by Country (1960–2023)  
+- **Quelle:** [Kaggle – World Population Dataset](https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset)  
+- **Format:** CSV-Datei  
+- **Größe:** 234 Zeilen, 17 Spalten  
+- **Wichtige Spalten:** Land, Kontinent, Bevölkerung (1970, 1980, 1990, 2000, 2010, 2020, 2022), Fläche, Dichte, Weltbevölkerungsanteil  
+- **Lizenz:** *CC BY 4.0 License* (freie Nutzung unter Nennung der Quelle)
 
-**Beispielhafte Spalten im WorldCups-Datensatz:**
-`Year`, `Country`, `Winner`, `Runners-Up`, `GoalsScored`, `MatchesPlayed`, `Attendance`
-
-**Beispielhafte Spalten im Population-Datensatz:**
-`Country/Territory`, `Continent`, `1970 Population`, `2022 Population`, `Area (km²)`, `Growth Rate`
-
----
-
-### Grundlegende Statistiken
-**WorldCups.csv**  
-- Zeitraum: 1930 – 2014  
-- Durchschnittliche Anzahl an Toren pro Turnier: **≈ 119 Tore**  
-- Minimum: **70 Tore** (1930), Maximum: **171 Tore** (1998)  
-- Anzahl der Turniere: **20**
-
-**world_population.csv**  
-- Zeitraum (abgedeckt durch Spalten): **1970 – 2022**  
-- Durchschnittliche Bevölkerungszahl (2022): ca. **33 Mio. pro Land**  
-- Min: **≈ 10 000**, Max: **1,4 Mrd.**  
-- Enthält über 230 Länder mit historischen Bevölkerungswerten.
+In dieser Datei ist für jedes Land angegeben, wie viele Einwohner es in verschiedenen Jahren hatte.  
+Die letzte Spalte zeigt den Anteil an der Weltbevölkerung in Prozent (z. B. Afghanistan hat dort 0.52 %, nicht 52 %).  
+Der Datensatz startet ab 1970, weshalb frühere Jahre (z. B. ältere Weltmeisterschaften) nicht direkt vergleichbar sind.  
 
 ---
 
-### Räumliche und zeitliche Abdeckung
-- **WorldCups:** Weltweite Turniere von 1930 bis 2014  
-- **Population:** Bevölkerungsentwicklung pro Land von 1970 bis 2022  
-- Gemeinsamer sinnvoller Analysezeitraum: **1970–2014**, da ab 1970 verlässliche Bevölkerungsdaten vorhanden sind.
+## 2. Verbindung der Datensätze (Augmentation)
 
----
+Ich habe die beiden Datensätze ausgewählt, weil sie sich gut miteinander verbinden lassen.  
+In beiden steht jeweils ein Land, also kann man sie über den Ländernamen zusammenführen.  
+Dadurch kann man zum Beispiel untersuchen, ob Länder mit einer größeren Bevölkerung im Durchschnitt erfolgreicher bei Fußball-Weltmeisterschaften sind.
 
-### Lizenz
-Beide Datensätze stehen unter einer **offenen Lizenz (CC BY 4.0 / Open Data License)** und dürfen für nicht-kommerzielle, wissenschaftliche Zwecke frei verwendet, analysiert und weiterverarbeitet werden.
+### Idee für Forschungsfragen:
+- Gibt es einen Zusammenhang zwischen der Bevölkerungsgröße eines Landes und seinem sportlichen Erfolg?  
+- Haben Länder mit vielen Einwohnern häufiger den WM-Titel gewonnen?  
+- Wie schneiden kleinere Länder im Vergleich ab (z. B. Kroatien, Uruguay)?  
 
----
-
-## 2. Datensatz-Erweiterung (Augmentation)
-
-### Zweiter Datensatz & Verbindung
-Der zweite Datensatz („World Population“) kann direkt über die Spalte **Land / Country** mit dem FIFA-Datensatz verknüpft werden.  
-Dadurch kann analysiert werden, **ob Länder mit einer größeren Bevölkerung tendenziell erfolgreicher bei Fußball-Weltmeisterschaften sind.**
-
----
-
-### Mögliche Forschungsfragen
-- Haben Länder mit mehr Einwohnern häufiger den Weltmeistertitel gewonnen?  
-- Gibt es eine Korrelation zwischen Bevölkerungsgröße und WM-Erfolg (z. B. Platzierung oder Teilnahmen)?  
-- Wie haben sich kleinere Länder (z. B. Kroatien, Uruguay) im Verhältnis zu großen Nationen entwickelt?  
-- Welche Kontinente stellen überdurchschnittlich erfolgreiche Teams im Verhältnis zur Bevölkerungsgröße?
-
----
-
-### Nächste Schritte zur Verknüpfung
-1. **Standardisierung der Ländernamen** (z. B. „Germany“ ↔ „Federal Republic of Germany“)  
-2. **Einschränkung auf Jahre ab 1970** (da Bevölkerungsdaten erst dann verfügbar sind)  
-3. **Merging der Datensätze** anhand der Länderspalte  
-4. **Berechnung neuer Kennzahlen**, z. B. durchschnittliche Bevölkerung pro Titel oder pro Finalteilnahme  
-5. **Visualisierung** (Scatterplot: Bevölkerung vs. Titelanzahl, Heatmap nach Kontinenten)
+### Nächste Schritte:
+1. Ländernamen angleichen (z. B. „Germany“ vs. „Federal Republic of Germany“)  
+2. Zeitraum auf 1970–2014 beschränken, da ab 1970 Populationsdaten vorhanden sind  
+3. Datensätze zusammenführen (Merge über Land)  
+4. Erste Auswertung (z. B. Häufigkeit von Titeln vs. Bevölkerung)  
+5. Darstellung der Ergebnisse mit einer einfachen Grafik (z. B. Balkendiagramm oder Scatterplot)
 
 ---
 
 ## 3. FAIR-Bewertung
 
+### FIFA World Cup Dataset
 | Prinzip | Frage | Bewertung |
-|----------|--------|------------|
-| **Findable (Auffindbar)** | Sind die Datensätze leicht zu finden und mit Metadaten versehen? | ✅ Ja, beide sind auf Kaggle gut dokumentiert und über Suchmaschinen auffindbar. |
-| **Accessible (Zugänglich)** | Können die Daten frei heruntergeladen werden? | ✅ Ja, beide sind öffentlich ohne Login zugänglich. |
-| **Interoperable (Kompatibel)** | Liegen sie in standardisierten, maschinenlesbaren Formaten vor? | ✅ Ja, CSV ist universell nutzbar. |
-| **Reusable (Wiederverwendbar)** | Ist die Lizenz eindeutig und die Dokumentation ausreichend? | ⚠️ Teilweise: Die Population-Datei enthält gute Metadaten, die FIFA-Daten weniger Kontext zu Quellen. Beide aber grundsätzlich offen und wiederverwendbar. |
+|----------|--------|-----------|
+| **Findable (auffindbar)** | Lässt sich der Datensatz leicht finden und sind Metadaten vorhanden? | Ja, der Datensatz ist auf Kaggle öffentlich und über die Suche leicht zu finden. |
+| **Accessible (zugänglich)** | Kann jeder die Daten herunterladen? | Ja, der Download ist ohne Anmeldung möglich. |
+| **Interoperable (kompatibel)** | Liegt er in einem standardisierten, maschinenlesbaren Format vor? | Ja, als CSV-Datei. |
+| **Reusable (wiederverwendbar)** | Ist die Lizenz klar und die Quelle angegeben? | Ja, über die Kaggle Dataset License. Es fehlen aber Hintergrundinfos zu den genauen Datenquellen (z. B. FIFA-Website). |
+
+---
+
+### World Population Dataset
+| Prinzip | Frage | Bewertung |
+|----------|--------|-----------|
+| **Findable (auffindbar)** | Ist der Datensatz leicht zu finden? | Ja, über Kaggle öffentlich auffindbar, mit Beschreibung und Metadaten. |
+| **Accessible (zugänglich)** | Kann man ihn ohne Barrieren herunterladen? | Ja, der Datensatz ist frei zugänglich. |
+| **Interoperable (kompatibel)** | Wird ein gängiges Datenformat verwendet? | Ja, es handelt sich um CSV-Dateien mit klaren Spalten. |
+| **Reusable (wiederverwendbar)** | Ist die Lizenz offen und die Dokumentation ausreichend? | Ja, CC BY 4.0 erlaubt Wiederverwendung mit Quellenangabe. Die Spalten sind klar dokumentiert. |
 
 ---
 
 ## 4. Reflexion
 
-Die Arbeit mit offenen Datensätzen wie diesen zeigt gut, wie unterschiedlich Datenquellen in Umfang und Struktur sein können.  
-Während der FIFA-Datensatz kompakt und klar strukturiert ist, liefert der Bevölkerungsdatensatz viele zusätzliche Variablen und Zeitdimensionen.  
-Eine kleine Einschränkung besteht darin, dass die Bevölkerungsdaten erst ab 1970 beginnen, sodass frühere Weltmeisterschaften nicht direkt vergleichbar sind.  
-Trotzdem bietet der kombinierte Datensatz eine gute Grundlage, um statistische Zusammenhänge zwischen Bevölkerung und sportlichem Erfolg zu untersuchen.  
-Besonders spannend ist dabei die Erkenntnis, dass auch kleinere Länder mit weniger Einwohnern überdurchschnittliche Leistungen erzielen können.  
+Ich finde die Kombination der beiden Datensätze ganz passend, weil sie sich thematisch leicht verknüpfen lässt und man mit wenig Aufwand interessante Fragen stellen kann.  
+Was man aber beachten muss, ist, dass die Bevölkerungsdaten erst ab 1970 starten, während die Weltmeisterschaften schon 1930 beginnen.  
+Für die Analyse würde ich mich deswegen nur auf den Zeitraum ab 1970 konzentrieren.  
 
-Insgesamt sind beide Datensätze **gut zugänglich, offen lizenziert** und lassen sich **einfach kombinieren**, was sie zu einem idealen Beispiel für Open-Data-Arbeiten macht.
-
----
+Mir gefällt, dass beide Datensätze offen zugänglich und in einem verständlichen Format sind.  
+Beide sind klein genug, um sie einfach mit Tools wie Python oder Excel zu analysieren, und gleichzeitig umfangreich genug, um sinnvolle Zusammenhänge zu finden.  
+Insgesamt also eine gute Grundlage, um im nächsten Schritt eine kleine Datenpipeline aufzubauen und visuell auszuwerten.
