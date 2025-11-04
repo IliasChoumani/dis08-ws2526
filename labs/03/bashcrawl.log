@@ -1,0 +1,500 @@
+   60  ls
+   61  ls
+   62  pwd
+   63  Desktop/shell-lesson
+   64  Desktop/shell_lesson
+   65  pwd
+   66  Desktop
+   67  /Desktop
+   68  pwd
+   69  cd
+   70  cd/Desktop
+   71  pwd
+   72  cd
+   73  pwd
+   74  cd./Desktop
+   75  cd../Desktop
+   76  ls Desktop/shell-lesson
+   77  ls Desktop
+   78  ls Desktop/shell_lesson
+   79  pwd
+   80  ls Desktop/shell-lesson
+   81  ls Desktop/shell-lesson
+   82  ls Desktop/shell-lesson
+   83  ls Desktop
+   84  ls Desktop/ThKoeln
+   85  ls Desktop
+   86  ls Desktop -l
+   87  ls Desktop/ThKoeln
+   88  pwd
+   89  cd Desktop
+   90  pwd
+   91  ls Desktop/shell-lesson
+   92  cd shell-lesson
+   93  pwd
+   94  ls shell-lesson
+   95  pwd
+   96  ls shell_lesson
+   97  ls shell-lesson
+   98  ls shell-lesson
+   99  pwd
+  100  ls shell-lesson
+  101  ls Desktop/shell-lesson
+  102  pwd
+  103  ls Desktop/shell-lesson
+  104  cd Desktop
+  105  pwd
+  106  cd shell-lesson/
+  107  pwd
+  108  ls Desktop/shell-lesson
+  109  ls shell-lesson
+  110  pwd
+  111  pwd
+  112  pwd
+  113  ls Desktop/shell-lesson
+  114  pwd
+  115  pwd
+  116  ls
+  117  ls -l
+  118  ls -lh
+  119  cd ..
+  120  pwd
+  121  ls shell-lesson
+  122  pwd
+  123  pwd
+  124  cd
+  125  pwd
+  126  ls Desktop/shell-lesson
+  127  pwd
+  128  cd Desktop/
+  129  pwd
+  130  pwd
+  131  cd shell-lesson/
+  132  pwd
+  133  ls
+  134  pwd
+  135  pwd
+  136  man ls
+  137  pwd
+  138  ls -wc
+  139  ls -w
+  140  wc
+  141  #Mein Bash Skript
+  142  echo "Skript beginnt"
+  143  for FILE in *.txt; do  echo "$FILE"; head -n 2 "$FILE"; tail -n 2 "$FILE"; done 
+  144  echo "Skript Beendet"
+  145  pwd
+  146  cd Desktop/shell-lesson/
+  147  pwd
+  148  ls
+  149  ls -l
+  150  ls *.pdf
+  151  ls
+  152  ls -ls
+  153  ls -lS
+  154  ls -lt
+  155  pwd
+  156  pwd
+  157  mkdir firstdir
+  158  pwd
+  159  ls
+  160  cd firstdir
+  161  pwd
+  162  cd..
+  163  cd ..
+  164  pwd
+  165  cd firstdir/
+  166  pwd
+  167  pwd
+  168  head *.txt
+  169  head *.txt
+  170  head 829.txt
+  171  pwd
+  172  cd ..
+  173  pwd
+  174  head *.txt
+  175  mv 829-0.txt gulliver.txt
+  176  pwd
+  177  ls -h
+  178  cp gulliver.txt gulliever-backup.txt
+  179  ls
+  180  mv firstdir/ backup
+  181  pwd
+  182  -ls
+  183  ls 
+  184  mv gulliver-backup.txt backup/
+  185  pwd
+  186  mv gulliver-backup.txt backup/
+  187  mv gulliver-backup.txt backup/
+  188  mv gulliver-backup.txt backup/
+  189  pwd
+  190  ls
+  191  mv gulliever-backup.txt backup/
+  192  pwd
+  193  ls
+  194  cd backup/
+  195  ls
+  196  cd ..
+  197  pwd
+  198  rm g
+  199  rm gulliver.txt 
+  200  ls
+  201  rm -r backup/
+  202  ls 
+  203  pwd
+  204  ls 
+  205  pwd
+  206  ls
+  207  touch a.doc b.doc c.doc d.doc
+  208  pwd
+  209  ls 
+  210  for FILE in a.doc b.doc c.doc d.doc; do echo $FILE; cp "$FILE" backup_$"FILE"; done
+  211  ls
+  212  for FILE in a.doc b.doc c.doc d.doc; do echo $FILE; cp "$FILE" backup_"$FILE"; done
+  213  ls 
+  214  rm backup_FILE 
+  215  ls
+  216  for FILE in *.doc; do echo"$FILE ist toll!"; echo"------------"; done
+  217  for FILE in *.doc; do echo"$FILE ist toll!"; echo "------------"; done
+  218  for FILE in *.doc; do echo "$FILE ist toll!"; echo "------------"; done
+  219  for FILE in *.txt; do echo "_FILE"; head -n 1 "_FILE"; done
+  220  for FILE in *.txt; do echo "FILE"; head -n 1 "_FILE"; done
+  221  for FILE in *.txt; do echo "_FILE"; done
+  222  for FILE in *.txt; do echo "FILE"; done
+  223  for FILE in *.txt; do echo "_FILE"; done
+  224  for FILE in *.txt; do echo "$FILE"; done
+  225  for FILE in *.txt; do echo "$FILE"; head -n 1 "$FILE"; done
+  226  for FILE in *.txt; do echo "$FILE"; head -n 1 "$FILE"; tail -n 1 "$FILE"; done
+  227  for FILE in *.txt; do echo "$FILE"; head -n 1 "$FILE"; tail -n 1 "$FILE"; done
+  228  pwd
+  229  ls 
+  230  rm *.doc
+  231  ls
+  232  wc -l *.txt
+  233  pwd
+  234  ls 
+  235  pwd
+  236  ls | wc -l
+  237  nanio
+  238  nano mein_bashskript.sh
+  239  ls
+  240  bash mein_bashskript.sh 
+  241  nano
+  242  nano mein_bashskript.sh 
+  243  bash mein_bashskript.sh 
+  244  nano mein_bashskript.sh 
+  245  bash mein_bashskript.sh 
+  246  ls
+  247  mkdir Bash_Skript_Ilias
+  248  pwd
+  249  ls
+  250  mv md
+  251  mv mein_bashskript.sh Bash_Skript_Ilias/
+  252  pwd
+  253  ls
+  254  git config --global user.name "Ilias Choumani"
+  255  git config --global user.email "choumani.ilias@gmail.com"
+  256  git init
+  257  ls -a
+  258  cd Bash_Skript_Ilias/
+  259  pwd
+  260  git status
+  261  pwd
+  262  git add mein_bashskript.sh 
+  263  git status
+  264  git commit -m "Inital commit"
+  265  nano README.md
+  266  git status
+  267  ls
+  268  git add
+  269  git add .
+  270  git commit -m "Add README.md"
+  271  git log 
+  272  ssh-keygen -t rsa -b 4096 -C "choumani.ilias@gmail.com"
+  273  cat ~/.ssh/id_rsa.pub
+  274  pwd
+  275  git remote add origin git@github.com:IliasChoumani/Bash_Skript_Ilias.git
+  276  git branch -M main
+  277  git status
+  278  git push -u origin main
+  279  cat README.md 
+  280  git pull 
+  281  cat README.md 
+  282  nano README.md 
+  283  git status
+  284  git add README.md 
+  285  git commit -m "Add date"
+  286  git push 
+  287  nano R
+  288  nano README.md 
+  289  git pish
+  290  git push
+  291  git status
+  292  git add README.md 
+  293  git commit -m
+  294  git -m "add date"
+  295  git push
+  296  nano README.md 
+  297  nano README.md 
+  298  nano README.md 
+  299  nano README.md 
+  300  git status
+  301  git add README.md 
+  302  git commit -m "add something"
+  303  git push
+  304  history > history.txt
+  305  ls
+  306  pwd
+  307  cd C:\Users\Ilias\OneDrive\Desktop\ThKoeln\Wi2324\DIS17
+  308  cd /c/Users/Ilias/OneDrive/Desktop
+  309  cd /c/Users/Ilias/OneDrive/Desktop/ThKoeln/Wi2324/DIS17
+  310  pwd
+  311  cd solr-8.11.2
+  312  cd bin
+  313  ./solr 
+  314  ./solr start
+  315  ./solr start
+  316  ps --help
+  317  bin/solr start
+  318  bin./solr start
+  319  ./solr start
+  320  -- o
+  321  ./solr start
+  322  ./solr start
+  323  ./solr start
+  324  exit
+  325  pwd
+  326  cd Ilias\OneDrive\Desktop\ThKoeln\Wi2324\DIS17
+  327  cd Ilias\OneDrive
+  328  cd /OneDrive/Desktop/ThKoeln/Wi2324/DIS17
+  329  cd /OneDrive/Desktop/ThKoeln/Wi2324/DIS17
+  330  cd OneDrive/Desktop/ThKoeln/Wi2324/DIS17
+  331  cd solr-8.11.2
+  332  cd bin
+  333  start solr
+  334  exit
+  335  cd Ilias\OneDrive\Desktop\ThKoeln\Wi2324\DIS17\solr-8.11.2\bin
+  336  cd OneDrive\Desktop\ThKoeln\Wi2324\DIS17\solr-8.11.2\bin
+  337  cd OneDrive\Desktop\ThKoeln
+  338  cd OneDrive/Desktop/ThKoeln/Wi2324\DIS17/solr-8.11.2/bin
+  339  cd OneDrive/Desktop/ThKoeln/Wi2324/DIS17/solr-8.11.2/bin
+  340  solr start
+  341  /solr start
+  342  solr start
+  343  start solr
+  344  start solr
+  345  start solr
+  346  exit
+  347  pwd
+  348  cd OneDrive/Desktop/ThKoeln/Wi2324/DIS17
+  349  cd solr-8.11.2
+  350  cs bin
+  351  cd bin
+  352  pwd
+  353  start solr
+  354  exit
+  355  cd C:\Desktop\ThKoeln\WI2425\DIS08
+  356  cd C:/Desktop/ThKoeln/WI2425/DIS08
+  357  cat bundesliga_player.csv
+  358  wc [200~bundesliga_player.csv~
+  359  wc bundesliga_player.csv
+  360  head bundesliga_player.csv
+  361  script output.txt
+  362  tail bundesliga_player.csv
+  363  cd C:\Desktop\ThKoeln\WI2425\DIS08\L03
+  364  cd C:/Desktop/ThKoeln/WI2425/DIS08/L03
+  365  tail bundesliga_player.csv
+  366  | bundesliga_player.csv
+  367  grep bundesliga_player.csv
+  368  grep "neuer" bundesliga_player.csv
+  369  grep "Neuer" bundesliga_player.csv
+  370  exit
+  371  cd C:/Desktop/ThKoeln/WI2425/DIS08Vorbereitung/L03
+  372  cat bundesliga_player.csv
+  373  wc bundesliga_player.csv
+  374  wc -l bundesliga_player.csv
+  375  head -n 10 bundesliga_player.csv
+  376  head bundesliga_player.csv
+  377  head -n 5 bundesliga_player.csv | tail -n 1
+  378  tail -n 3 bundesliga_player.csv | wc -w
+  379  grep -m 1 "regex-muster" bundesliga_player.csv
+  380  grep -m 1 "Neuer “bundesliga_player.csv
+  381  grep -m 1 "Neuer “bundesliga_player.csv
+  382  grep -m 1 "Neuer “bundesliga_player.csv
+  383  grep  "Neuer “bundesliga_player.csv
+  384  grep "Neuer" bundesliga_player.csv
+  385  grep -m 1 "Neuer bundesliga_player.csv
+  386  grep -m 1 "Neuer+" bundesliga_player.csv
+  387  grep -m 1 "Neuer" bundesliga_player.csv
+  388  grep -m 1 "Neuer “bundesliga_player.csv
+  389  grep -m 1 "Neuer" bundesliga_player.csv
+  390  grep -m 1 "Neuer“ bundesliga_player.csv
+  391  grep -m 1 "Neuer" bundesliga_player.csv
+  392  grep "Neuer" bundesliga_player.csv
+  393  cut -d, -f2 bundesliga_player.csv
+  394  cut -d, -f3 bundesliga_player.csv | grep -w "25" | wc -l
+  395  $ cut -d, -f4 bundesliga_player.csv | grep -w "25" | wc -l
+  396  cut -d, -f4 bundesliga_player.csv | grep -v "Neuer" | wc -l
+  397  cut -d, -f3 bundesliga_player.csv | grep -v "Neuer" | wc -l
+  398  cut -d, -f3 bundesliga_player.csv | grep -v "Müller" | wc -l
+  399  cut -d, -f3 bundesliga_player.csv | grep -v "Manuel" | wc -l
+  400  cut -d, -f3 bundesliga_player.csv | grep -v "Thomas" | wc -l
+  401  cut -d, -f3 bundesliga_player.csv | grep -v "Andreas" | wc -l
+  402  cut -d, -f3 bundesliga_player.csv | grep -v "Manuel" | wc -l
+  403  third_highest=$(cut -d, -f3 bundesliga_player.csv | sort -nr | uniq | head -n 3 | tail -n 1)
+  404  cut -d, -f3 bundesliga_player.csv | sort -nr | uniq | head -n 3 | tail -n 1 | grep bundesliga_player.csv
+  405  cut -d, -f3 bundesliga_player.csv | sort -nr | uniq | head -n 3 | tail -n 1 | grep -Ff - bundesliga_player.csv
+  406  cut -d, -f3 bundesliga_player.csv | sort -nr | uniq | head -n 1 | tail -n 1 | grep -Ff - bundesliga_player.csv
+  407  cut -d, -f3 bundesliga_player.csv | sort -nr | uniq | head -n 3 | tail -n 1 | grep -Ff - bundesliga_player.csv
+  408  cut -d, -f3 bundesliga_player.csv | sort -nr | uniq | head -n 1 | tail -n 1 | grep -Ff - bundesliga_player.csv
+  409  $ cut -d, -f3 bundesliga_player.csv | sort -nr | uniq | head -n 1 | tail -n 1 | grep -Ff - bundesliga_player.csv
+  410  cut -d, -f3 bundesliga_player.csv | sort -nr | uniq | head -n 3 | tail -n 1 | grep -Ff - bundesliga_player.csv
+  411  third_highest=$(cut -d, -f3 bundesliga_player.csv | sort -nr | uniq | head -n 3 | tail -n 1)
+  412  grep -m 1 ",$third_highest," bundesliga_player.csv
+  413  cut -d, -f2 bundesliga_player.csv | sort | uniq -d
+  414  shuf -n 3 bundesliga_player.csv
+  415  shuf -n 3 bundesliga_player.csv
+  416  awk -F, '$4 > 38' bundesliga_player.csv
+  417  awk -F, '$4 > 36' bundesliga_player.csv
+  418  awk -F, '$4 > 36' bundesliga_player.csv
+  419  exit
+  420  exit
+  421  cd C:/Desktop/ThKoeln/WI2425/DIS08Vorbereitung/L04
+  422  chmod +x analyze_dataset.sh
+  423  ./analyze_dataset.sh
+  424  ./analyze_dataset.sh
+  425  cd C:/Desktop/ThKoeln/WI2425/DIS08Vorbereitung/L04
+  426  chmod +x analyze_dataset.sh 
+  427  ./analyze_dataset.sh 
+  428  chmod +x analyze_numeric_textual.sh
+  429  ./analyze_numeric_textual.sh
+  430  ./analyze_numeric_textual.sh -m
+  431  git config
+  432  git config -- global user.name "[IliasChoumani]"
+  433  git init
+  434  git config --global user.name "IliasChoumani"
+  435  git config --global user.name "IliasChoumani"
+  436  [200~git config --global user.email "deine.email@beispiel.com"
+  437  git config --global user.email "ilias.choumani@smail.th-koeln.de"
+  438  git config --global --list
+  439  cd C:/Desktop/ThKoeln/WI2425/DIS08Vorbereitung/L05
+  440  git config --global --list
+  441  git clone git@github.com:IliasChoumani/DIS08.git
+  442  ls -al ~/.ssh
+  443  $ ssh-keygen -t ed25519 -C "ilias.choumani@smail.th-koeln.de"
+  444  $ ssh-keygen -t ed25519 -C "ilias.choumani@smail.th-koeln.de"
+  445  ssh-keygen -t ed25519 -C "ilias.choumani@smail.th-koeln.de"
+  446  ls -al ~/.ssh
+  447  cat ~/.ssh/id_ed25519.pub
+  448  cat ~/.ssh/sshkey
+  449  cat ~/.ssh/sshkey.pub
+  450  ssh-keygen -t ed25519 -C "ilias.choumani@smail.th-koeln.de"
+  451  cat ~/.ssh/id_ed25519.pub
+  452  eval "$(ssh-agent -s)"
+  453  ssh-add ~/.ssh/id_ed25519
+  454  ssh -T git@github.com
+  455  git clone git@github.com:IliasChoumani/DIS08.git
+  456  git clone git@github.com:IliasChoumani/DIS08.git
+  457  git clone git@github.com:IliasChoumani/DIS08.git
+  458  cd reposetory
+  459  cd repository
+  460  git config --global --list
+  461  cd C:\Desktop\ThKoeln\WI2425\DIS08Vorbereitung\L05
+  462  C:/Desktop/ThKoeln/WI2425/DIS08Vorbereitung/L05
+  463  cd C:/Desktop/ThKoeln/WI2425/DIS08Vorbereitung/L05
+  464  git clone git@github.com:IliasChoumani/Bash_Skript_Ilias.git
+  465  git config --global --list
+  466  cd C:/Desktop/ThKoeln/WI2425/DIS08Vorbereitung/L05
+  467  git clone git@github.com:IliasChoumani/Ueben.git
+  468  git config --global --list
+  469  cd C:/Desktop/ThKoeln/WI2425/DIS08Vorbereitung/L06
+  470  git clone git@github.com:IliasChoumani/Ueben.git
+  471  cd Ueben
+  472  git add .
+  473  git commit -m "upload shell skript"
+  474  git push origin main
+  475  git add .
+  476  git commit -m "upload L06"
+  477  git push origin main
+  478  git config --global --list
+  479  C:\Desktop\ThKoeln\WI2425\DIS08Vorbereitung\L06
+  480  C:/Desktop/ThKoeln/WI2425/DIS08Vorbereitung/L06
+  481  cd C:/Desktop/ThKoeln/WI2425/DIS08Vorbereitung/L06
+  482  cd C:/Desktop/ThKoeln/WI2425/DIS08Vorbereitung/L06/Ueben
+  483  git add .
+  484  git commit -m "Data Analyses"
+  485  git push origin main
+  486  git config --global --list
+  487  cd C:/Desktop/ThKoeln/WI2425/DIS08Vorbereitung/L07
+  488  git clone https://github.com/IliasChoumani/Ueben.git
+  489  cd Ueben
+  490  git add .
+  491  git commit -m "L07"
+  492  git push origin main
+  493  exit
+  494  cd C:/Desktop/ThKoeln/Wi2324/DIS17/solr-8.11.2/bin
+  495  start solr
+  496  jupyter notebook
+  497  cd /c/Desktop/ThKoeln/WI2526/dis08/bashcrawl-stable-2024.02.09/entrance/
+  498  ls
+  499  cat scroll
+  500  ls
+  501  cd cellar
+  502  ls
+  503  cat scroll
+  504  alias ls='ls -F'
+  505  ls
+  506  ./treasure
+  507  export I=amulet,$I
+  508  echo $I
+  509  ls
+  510  cd armoury
+  511  ls
+  512  [200~cat scroll
+  513  cat scroll
+  514  ls
+  515  cat scroll
+  516  ./potion
+  517  ./treasure
+  518  export HP=15
+  519  echo $HP
+  520* 
+  521  echo $HP
+  522  export I=sword,$I
+  523  echo $I
+  524  # Output sollte etwa sein: sword,amulet,
+  525  echo $I
+  526  cd chamber
+  527  ls
+  528  cat scroll
+  529  pwd
+  530  cd ..
+  531  ls
+  532  cd ..
+  533  ls
+  534  cd ..
+  535  ls
+  536  cd chapel
+  537  ls
+  538  cat scroll
+  539  cd ..
+  540  ls
+  541  cd vault
+  542  ls
+  543  cat scroll
+  544  ./glass
+  545  cat scroll
+  546  cd strongholt
+  547  cd stronghold
+  548  ls
+  549  cat scroll
+  550  cp orb1 orb2
+  551  cp orb1 orb3
+  552  ls
+  553  ./goblet
+  554  export I=goblet,$I
+  555  echo $I
+  556  history -100 > bashcrawl.log
+  557  history > bashcrawl.log
+  558  history > /c/Users/ilias/Desktop/bashcrawl.log
+  559  history > bashcrawl.log
