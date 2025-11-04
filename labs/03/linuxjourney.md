@@ -32,7 +32,7 @@ The command `pwd` (print working directory) displays the full path of your curre
 **Example:**
 ```bash
 pwd
-# Output: /home/liam
+# Output: /home/ilias
 ```
 
 ---
