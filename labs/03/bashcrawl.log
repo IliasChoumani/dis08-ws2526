@@ -1,0 +1,67 @@
+  497  cd /c/Desktop/ThKoeln/WI2526/dis08/bashcrawl-stable-2024.02.09/entrance/
+  498  ls
+  499  cat scroll
+  500  ls
+  501  cd cellar
+  502  ls
+  503  cat scroll
+  504  alias ls='ls -F'
+  505  ls
+  506  ./treasure
+  507  export I=amulet,$I
+  508  echo $I
+  509  ls
+  510  cd armoury
+  511  ls
+  512  [200~cat scroll
+  513  cat scroll
+  514  ls
+  515  cat scroll
+  516  ./potion
+  517  ./treasure
+  518  export HP=15
+  519  echo $HP
+  520* 
+  521  echo $HP
+  522  export I=sword,$I
+  523  echo $I
+  524  # Output sollte etwa sein: sword,amulet,
+  525  echo $I
+  526  cd chamber
+  527  ls
+  528  cat scroll
+  529  pwd
+  530  cd ..
+  531  ls
+  532  cd ..
+  533  ls
+  534  cd ..
+  535  ls
+  536  cd chapel
+  537  ls
+  538  cat scroll
+  539  cd ..
+  540  ls
+  541  cd vault
+  542  ls
+  543  cat scroll
+  544  ./glass
+  545  cat scroll
+  546  cd strongholt
+  547  cd stronghold
+  548  ls
+  549  cat scroll
+  550  cp orb1 orb2
+  551  cp orb1 orb3
+  552  ls
+  553  ./goblet
+  554  export I=goblet,$I
+  555  echo $I
+  556  history -100 > bashcrawl.log
+  557  history > bashcrawl.log
+  558  history > /c/Users/ilias/Desktop/bashcrawl.log
+  559  history > bashcrawl.log
+  560  history > bashcrawl.log
+  561  # Im aktuellen Terminal:
+  562  history | sed -n '/cd .*bashcrawl.*\/entrance\/$/,$p' > bashcrawl.log
+  563  history | sed -n '/cd .*bashcrawl.*\/entrance\/$/,$p' > bashcrawl.log
