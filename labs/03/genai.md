@@ -28,7 +28,6 @@ Konkret hat mir das LLM bei folgenden Punkten geholfen:
 **Gekürzte KI-Antwort:**  
 - `help` erklärt Shell built-ins  
 - `man` zeigt vollständige System-Manuals  
-Diese Erklärung habe ich verstanden und anschließend selbstständig formuliert.
 
 ## 3. Vergleich & Reflexion
 Die KI hat mir Impulse gegeben, aber nicht die Inhalte erstellt.  
