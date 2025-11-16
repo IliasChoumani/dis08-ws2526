@@ -35,12 +35,7 @@ Wesentliche Unterschiede zwischen Modellvorschlägen und meinem Endergebnis:
 
 - ChatGPT schreibt typischerweise sehr ausführlich und formal.  
   → Ich habe Formulierungen verkürzt und an meinen eigenen Schreibstil angepasst.
-- Die Beispiele in `linuxjourney.md` habe ich selbst im Terminal ausgeführt.  
-  → Outputs wie  
-  ```bash
-  pwd
-  ```  
-  stammen also aus meiner eigenen Umgebung.
+
 - Bashcrawl habe ich vollständig selbst gespielt; dort habe ich nur KI-Unterstützung genutzt, wenn ich nicht weiter gekommen bin.
 
 Ich sehe die KI hier eher als **Feedback-Instrument**, nicht als Werkzeug zur Erstellung der Lösung.
