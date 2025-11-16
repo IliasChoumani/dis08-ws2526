@@ -42,7 +42,7 @@ Wesentliche Unterschiede zwischen Modellvorschlägen und meinem Endergebnis:
   pwd
   ```  
   stammen also aus meiner eigenen Umgebung.
-- Bashcrawl habe ich vollständig selbst gespielt; dort habe ich keine KI-Unterstützung genutzt.
+- Bashcrawl habe ich vollständig selbst gespielt; dort habe ich nur KI-Unterstützung genutzt, wenn ich nicht weiter gekommen bin.
 
 Ich sehe die KI hier eher als **Feedback-Instrument**, nicht als Werkzeug zur Erstellung der Lösung.
 
@@ -55,4 +55,4 @@ Der Einsatz der KI war in diesem Lab hilfreich, um:
 
 Die Bearbeitung der Inhalte (Lernen der Lektionen, Spielen von Bashcrawl, Lösen der Quizfragen) habe ich jedoch selbstständig vorgenommen.
 
-Die KI hat somit vor allem zur **Reflexion**, **Korrektur** und **besseren Strukturierung** beigetragen.
+Die KI hat somit vor allem zur **Reflexion**, **Korrektur** und **besseren Strukturierung** beigetragen aber auch teilweise wenn ich nicht weiter gekommen bin.
