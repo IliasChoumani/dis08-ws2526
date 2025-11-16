@@ -30,8 +30,6 @@ Konkret hat mir das LLM bei folgenden Punkten geholfen:
 - `man` zeigt vollständige System-Manuals  
 Diese Erklärung habe ich verstanden und anschließend selbstständig formuliert.
 
-Ich habe mein Markdown aber nicht automatisch generieren lassen, sondern nur manuell mit Hilfe der Hinweise überarbeitet.
-
 ## 3. Vergleich & Reflexion
 Die KI hat mir Impulse gegeben, aber nicht die Inhalte erstellt.  
 Wesentliche Unterschiede zwischen Modellvorschlägen und meinem Endergebnis:
